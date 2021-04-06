@@ -1,7 +1,9 @@
 #!/bin/bash
 
 if [ $1 ] ; then
-cd section${1} && touch README.md
+date=`date +'%Y年%m月%d日（%A）'`
+cd section${1} && touch README.md \
+&& echo "# 第${1}回目 [タイトル]\n\n${date}" > README.md
 else
 echo "Please section number"
 echo "example:"
