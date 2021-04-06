@@ -1,2 +1,9 @@
-# data-structure-and-algorithms-2
-データ構造とアルゴリズムⅡ
+# データ構造とアルゴリズムⅡ
+
+授業用
+
+## 各授業ディレクトリの作成
+
+```bash
+sh create_dir.sh
+```
