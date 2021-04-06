@@ -1,7 +1,7 @@
 # 第1回目 UML
 
 2021年04月06日（火曜日）
-[教科書](http://edu.net.c.dendai.ac.jp/ad2/2021/1)
+[参考資料](http://edu.net.c.dendai.ac.jp/ad2/2021/1)
 
 ## はじめに
 
