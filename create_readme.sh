@@ -15,7 +15,7 @@ if [ $1 ] ; then
   && echo "# 第${1}回目 ${title:6}\n\n${date}" > README.md \
   && echo "[参考資料](${url})" >> README.md
 
-  echo Create README! title: ${title:6}
+  echo "Create README! title: ${title:6}"
 else
   echo "Please section number"
   echo "example:"
