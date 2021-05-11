@@ -140,7 +140,7 @@ SKIP: {
 }
 ```
 
-#### 例1
+#### 例5-4
 
 $$
 始 → (名前)*
@@ -181,3 +181,29 @@ class Rei {
   }
 }
 ```
+
+#### 例5-6
+
+```java
+PARSER_BEGIN(Parser)
+class Parser {
+}
+PARSER_END(Parser)
+TOKEN: {
+  <NAME : ["A"-"Z","a"-"z"] (["A"-"Z","a"-"z","0"-"9"])*>
+}
+SKIP:{
+  " "
+  | "\n"
+  | "\r"
+}
+public void start() :{
+  Token name;
+} {
+  (name=<NAME> {System.out.println("["+name.image+"]");})*
+}
+```
+
+### 数式処理
+
+

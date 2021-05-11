@@ -1,18 +1,17 @@
-options {
-  static = false;
-}
 PARSER_BEGIN(Parser)
 class Parser {
 }
 PARSER_END(Parser)
 TOKEN: {
-    <NAME : ["A"-"Z","a"-"z"] (["A"-"Z","a"-"z","0"-"9"])*>
+  <NAME : ["A"-"Z","a"-"z"] (["A"-"Z","a"-"z","0"-"9"])*>
 }
-SKIP: {
-    " "
-| "\n"
-| "\r"
+SKIP:{
+  " "
+  | "\n"
+  | "\r"
 }
-public void start() : {} {
-    (<NAME>)*
+public void start() :{
+  Token name;
+} {
+  (name=<NAME> {System.out.println("["+name.image+"]");})*
 }
